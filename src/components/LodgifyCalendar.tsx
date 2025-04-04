@@ -186,7 +186,7 @@ const parseICalData = (icalData: string): Date[] => {
         // Convert ICAL.Time to JavaScript Date objects
         // Adjust for potential timezone issues if necessary. iCal dates can be tricky.
         // startOfDay helps normalize to the beginning of the day for comparison.
-        let startDate = startOfDay(dtstart.toJSDate());
+        const startDate = startOfDay(dtstart.toJSDate());
         let endDate = startOfDay(dtend.toJSDate());
 
         // iCal DTEND is often exclusive, meaning the booking ends *at the start* of that day.
