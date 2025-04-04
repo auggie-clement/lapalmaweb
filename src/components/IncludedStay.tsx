@@ -72,9 +72,6 @@ const IncludedStay = () => {
                     <span className="text-gray-500">|</span>
                     <p className="text-gray-700">{amenity.description}</p>
                   </div>
-                  {amenity.value && (
-                    <p className="text-gray-500 italic pl-4">{amenity.value}</p>
-                  )}
                 </div>
               </div>
             ))}
