@@ -1,7 +1,8 @@
 import { Button } from "./ui/button";
+import { CSSProperties } from "react";
 
 const InstagramSection = () => {
-  const styles = {
+  const styles: Record<string, CSSProperties> = {
     section: {
       padding: "20px",
       textAlign: "center",
